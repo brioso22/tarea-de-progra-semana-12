@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            width: 400px;
+            height: 500px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            background-color: white;
+            color: blue;
+            border-radius: 10px;
+            width: 150px;
+            height: 30px;
+        }
+
+        #datos {
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formulario">
+        <h2>Consulta sobre tu carrera de interés para el Ciclo 1 - 2024</h2>
+        <br>
+        <label for="nombre">Nombre *</label>
+        <label for="apellido">Apellido *</label>
+        <br>
+        <input type="text" id="nombre" placeholder="Ingresar nombre">
+        <input type="text" id="apellido" placeholder="Ingresar apellido">
+        <br>
+        <br>
+        <label for="correo">Correo *</label>
+        <label for="telefono">Teléfono/Celular *</label>
+        <br>
+        <input type="text" id="correo" placeholder="Ingresar correo">
+        <input type="text" id="telefono" placeholder="Ingresar telefono">
+        <br>
+        <br>
+        <label for="cede">Cede</label>
+        <label for="modalidad">Modalidad</label>
+        <br>
+        <select id="cede" name="opciones">
+            <option value="sm">San Miguel</option>
+            <option value="ss">San Salvador</option>
+            <option value="us">Usulután</option>
+        </select>
+        <select id="modalidad" name="opciones">
+            <option value="vi">Virtual</option>
+            <option value="smi">Semi presencial</option>
+            <option value="pre">Presencial</option>
+        </select>
+        <br>
+        <br>
+        <label for="carrera">Carrera</label>
+        <label for="metododecontacto">Método de contacto</label>
+        <br>
+        <select id="carrera" name="opciones">
+            <option value="sis">Ing. Sistemas</option>
+            <option value="dr">Doctorado</option>
+            <option value="ind">Ing. Industrial</option>
+        </select>
+        <select id="metododecontacto" name="opciones">
+            <option value="ws">Whatsapp</option>
+            <option value="smi">Gmail</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button id="solicitar">Solicitar información</button>
+    </form>
+
+    <div id="datos"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
